@@ -1,18 +1,20 @@
+from datetime import datetime
+
 from django.db import models
 from shop.models import Product
 
 
 # Create your models here.
 class Order(models.Model):
-    first_name = models.CharField(max_length=60)
-    last_name = models.CharField(max_length=60)
+    name = models.CharField(max_length=60)
     email = models.EmailField()
+    phone = models.CharField(max_length=10)
     address = models.CharField(max_length=150)
-    postal_code = models.CharField(max_length=30)
-    city = models.CharField(max_length=100)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    credit_card_number = models.CharField(max_length=16, default="1234123412341234")
+    expire_date = models.CharField(default="12/24", max_length=5)
+    security_code = models.CharField(max_length=3, default="633")
     paid = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ('-created',)

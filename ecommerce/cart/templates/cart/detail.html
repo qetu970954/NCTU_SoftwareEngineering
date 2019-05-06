@@ -41,8 +41,8 @@
                             <td>
                                 <a href="{% url 'cart:cart_remove' product.id %}" class="btn btn-primary" role="button" aria-pressed="true" >Remove</a>
                             </td>
-                            <td>Price: {{ item.price }}</td>
-                            <td>Price: {{ item.total_price }}</td>
+                            <td>$ {{ item.price }}</td>
+                            <td>$ {{ item.total_price }}</td>
                         </tr>
                     {% endwith %}
                 {% endfor %}
