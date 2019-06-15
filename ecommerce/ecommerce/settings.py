@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'shop.apps.ShopConfig',
     'orders.apps.OrdersConfig',
-    'paypal.standard.ipn'
+    'paypal.standard.ipn',
+    'payment'
 ]
 
 MIDDLEWARE = [
@@ -123,5 +124,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'shop/static/img')
 
 CART_SESSION_ID = 'cart'
 
-PAYPAL_RECEIVER_EMAIL = 'sb-xadzg24911@business.example.com	'
+PAYPAL_RECEIVER_EMAIL = 'sb-xadzg24911@business.example.com'
 PAYPAL_TEST = True
