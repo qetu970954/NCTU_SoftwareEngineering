@@ -17,10 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework.routers import DefaultRouter
+from shop import views
+
+router = DefaultRouter()
+router.register(r'shop', views.ShopViewSet, base_name='Product')
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('cart', include('cart.urls')),
                   path('orders/', include('orders.urls')),
-                  path('', include('shop.urls')),
+                  path('shop/', include('shop.urls')),
+                  path('api/', include(router.urls))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
