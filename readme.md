@@ -27,3 +27,24 @@ pipenv shell # if you are not in the virtual environment
 cd ecommerce
 python manage.py runserver
 ```
+
+# PayPal Sandbox Accounts
+
+Sandbox website: 
+https://www.sandbox.paypal.com/signin
+
+Business:
+sb-xadzg24911@business.example.com
+
+Personal:
+sb-xvzgt12100@personal.example.com
+
+Both passward are:
+12345678
+
+If you want to test the PayPal IPN, you need to use [ngrok](https://ngrok.com/). And [change the Business IPN address](https://developer.paypal.com/docs/classic/ipn/integration-guide/IPNSetup/#setting-up-ipn-notifications-on-paypal).
+Example Address: http://*.ngrok.io/paypal
+
+---
+Paypal Reference:
+https://overiq.com/django-paypal-integration-with-django-paypal/

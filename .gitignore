@@ -112,3 +112,7 @@ venv.bak/
 *.iml
 out
 gen
+.vscode/settings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/ProjectSettings.json

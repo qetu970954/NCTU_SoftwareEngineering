@@ -19,7 +19,7 @@ def payment_process(request):
         'item_name':'Order {}'.format(order.id),
         'invoice':str(order.id),
         'currency_code':'TWD',
-        'notfy_url':'http://{}{}'.format(host, reverse('paypal-ipn')),
+        'notify_url':'http://{}{}'.format(host, reverse('paypal-ipn')),
         'return':'http://{}{}'.format(host, reverse('payment:done')),
         'cancel_return':'http://{}{}'.format(host, reverse('payment:canceled')),
     }
