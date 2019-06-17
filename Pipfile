@@ -9,6 +9,8 @@ verify_ssl = true
 django = "==2.0.1"
 djangorestframework = "*"
 pillow = "*"
+django-paypal = "*"
+pytz = "*"
 
 [requires]
 python_version = "3.7"
