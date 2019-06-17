@@ -1,4 +1,5 @@
-["""ecommerce URL Configuration
+"""
+ecommerce URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -31,6 +32,6 @@ urlpatterns = [
                   path('', include('shop.urls')),
                   path('payment/', include(('payment.urls', 'payment'), namespace='payment')),
                   path('paypal/', include('paypal.standard.ipn.urls')),
-                  path('shop/', include('shop.urls')),
+                  # path('shop/', include('shop.urls')),
                   path('api/', include(router.urls))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

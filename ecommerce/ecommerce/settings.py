@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'orders.apps.OrdersConfig',
     'paypal.standard.ipn',
-    'payment'
+    'payment',
     'rest_framework',
 ]
 
