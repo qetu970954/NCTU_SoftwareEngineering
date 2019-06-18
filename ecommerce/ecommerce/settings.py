@@ -127,5 +127,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'shop/static/img')
 
 CART_SESSION_ID = 'cart'
 
+# django-paypal settings
 PAYPAL_RECEIVER_EMAIL = 'sb-xadzg24911@business.example.com'
 PAYPAL_TEST = True
