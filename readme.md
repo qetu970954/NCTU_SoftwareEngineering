@@ -48,3 +48,8 @@ Example Address: http://*.ngrok.io/paypal/ipn/
 ---
 Paypal Reference:
 https://overiq.com/django-paypal-integration-with-django-paypal/
+
+---
+The 403 error code issue:
+https://github.com/spookylukey/django-paypal/issues/213
+

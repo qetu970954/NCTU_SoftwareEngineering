@@ -15,8 +15,7 @@ def payment_process(request):
     host = request.get_host()
     paypal_dict = {
         'business': settings.PAYPAL_RECEIVER_EMAIL,
-        'amount': '%.2f' % order.get_total_cost().quantize(
-            Decimal('.01')),
+        'amount': '%.2f' % order.get_total_cost(),
         'item_name': 'Order {}'.format(order.id),
         'invoice': str(order.id),
         'currency_code': 'TWD',
